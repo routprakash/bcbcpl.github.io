@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+      <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B C Bhuyan Construction Pvt Ltd.</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css"> <!-- Make sure this is loaded after Bootstrap -->
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+    }
+    .hero-header {
+  background: url(images/human.jpg) center center/cover no-repeat;
+  position: relative;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 20px;
+  background-attachment: fixed;
+}
+
+.hero-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+  z-index: 1;
+}
+
+.hero-header h1,
+.hero-header p {
+  position: relative;
+  z-index: 2;
+}
+
+    section {
+      padding: 80px 0;
+    }
+    h2 {
+      color: #801f1f;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .nav-pills .nav-link.active {
+      background-color: #801f1f;
+    }
+    .navbar {
+      padding: 0.7rem 1rem;
+    }
+
+    .navbar-nav .nav-link {
+      color: #000;
+      padding: 0.5rem 1rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link:focus {
+      color: #801f1f;
+      outline: none;
+      box-shadow: none;
+    }
+
+    .navbar-nav .dropdown-menu {
+      border-radius: 0.4rem;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      animation: fadeIn 0.2s ease-in-out;
+    }
+
+    .dropdown-item {
+      padding: 0.5rem 1rem;
+      color: #333;
+    }
+
+    .dropdown-item:hover {
+      background-color: #801f1f;
+      color: #fff;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div id="header-placeholder"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  fetch("header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("header-placeholder").innerHTML = data;
+
+      // Ensure dropdown toggles work after header loads
+      const dropdownTriggers = document.querySelectorAll('.dropdown-toggle');
+      dropdownTriggers.forEach(triggerEl => {
+        new bootstrap.Dropdown(triggerEl);
+      });
+
+      // Optional: Hover effect on desktop
+      if (window.innerWidth >= 992) {
+        document.querySelectorAll('.nav-item.dropdown').forEach(dropdown => {
+          dropdown.addEventListener('mouseover', () => {
+            const toggle = dropdown.querySelector('.dropdown-toggle');
+            const instance = bootstrap.Dropdown.getOrCreateInstance(toggle);
+            instance.show();
+          });
+          dropdown.addEventListener('mouseleave', () => {
+            const toggle = dropdown.querySelector('.dropdown-toggle');
+            const instance = bootstrap.Dropdown.getOrCreateInstance(toggle);
+            instance.hide();
+          });
+        });
+      }
+    });
+</script>
+
+   <!-- Hero Section -->
+ <header class="text-white text-center py-5 hero-header">
+    <h1 class="display-5">Human Capital</h1>
+    <p class="lead">Empowering people to build a better tomorrow</p>
+  </header>
+
+  <!-- Career Section -->
+  <section id="career" class="bg-white">
+    <div class="container">
+      <h2>Career</h2>
+      <p>
+        At BCBCPL, we believe that our people are our most valuable assets. We’re always on the lookout for passionate, driven individuals who are eager to grow with us. Whether you're just starting your career or are an experienced professional, BCBCPL offers opportunities to learn, lead, and make a difference.
+      </p>
+      <p>
+        <strong>Join us</strong> to be a part of an innovative and inclusive environment, where your contributions are valued and recognized.
+      </p>
+    </div>
+  </section>
+
+  <!-- Training & Development Section -->
+  <section id="training" class="bg-light">
+    <div class="container">
+      <h2>Training & Development</h2>
+      <p>
+        We invest in our people through continuous learning and upskilling programs. Our in-house and external training sessions are designed to enhance technical knowledge, leadership skills, and industry awareness.
+      </p>
+      <p>
+        We also promote certifications, workshops, and on-the-job learning to help our team stay ahead in a dynamic construction landscape.
+      </p>
+    </div>
+  </section>
+
+  <!-- Work Culture Section -->
+  <section id="culture" class="bg-white">
+    <div class="container">
+      <h2>Work Culture</h2>
+      <p>
+        BCBCPL fosters a positive and respectful work environment where every employee is encouraged to contribute and thrive. Our culture emphasizes:
+      </p>
+      <ul>
+        <li>Collaboration and teamwork</li>
+        <li>Transparency and integrity</li>
+        <li>Health and safety as top priorities</li>
+        <li>Diversity and equal opportunities</li>
+      </ul>
+      <p>
+        Our work culture empowers every individual to innovate and lead while maintaining a healthy work-life balance.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer placeholder -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

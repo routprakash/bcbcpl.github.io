@@ -1,0 +1,222 @@
+/* style.css */
+
+/* General navbar styling */
+.navbar {
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Brand text */
+  .navbar-brand {
+    font-size: 1.3rem;
+    color: #2d3e50;
+  }
+  
+  /* Nav links */
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link:focus {
+    color: #801f1f;
+  }
+  
+  /* Dropdown animations using Animate.css */
+  .dropdown-menu {
+    border-radius: 0;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown-item {
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+    color: #333;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #801f1f;
+  }
+  
+  /* Sticky header shadow */
+  .sticky-top {
+    z-index: 1030;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  }
+  
+
+
+  /* General Reset and Base Styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    font-weight: 700;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    height: 100vh;
+    background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+    position: relative;
+  }
+  
+  .hero-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    padding: 20px;
+  }
+  
+  /* About Section */
+  .about img {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Services Cards */
+  .services .card {
+    transition: transform 0.3s ease;
+  }
+  
+  .services .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Stats Section */
+  .stats h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  /* Key Projects */
+  .card.shadow-sm img {
+    height: 220px;
+    object-fit: cover;
+  }
+  
+  /* Our Strength Icons */
+  .bi {
+    transition: transform 0.3s ease;
+  }
+  
+  .bi:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Contact Button */
+  .btn-primary {
+    background-color: #00529B;
+    border-color: #00529B;
+  }
+  
+  .btn-primary:hover {
+    background-color: #003f7f;
+    border-color: #003f7f;
+  }
+  
+  /* Footer Placeholder (for spacing until actual footer is implemented) */
+  #footer-placeholder {
+    height: 80px;
+  }
+  
+
+
+
+
+.hero {
+    height: 75vh;
+    background: url('images/hero.jpg') center center/cover no-repeat;
+    position: relative;
+  }
+  
+  .hero-overlay {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .card-title {
+    color: #801f1f;
+  }
+
+
+
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+  @import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css');
+  
+
+
+.navbar-nav .dropdown-menu {
+  animation-duration: 0.3s;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.nav-link {
+  color: #000;
+  font-weight: 500;
+}
+
+.nav-link:hover, .dropdown-item:hover {
+  color: #801f1f;
+}
+
+.dropdown-menu {
+  border: none;
+  margin-top: 0.5rem;
+}
+
+.navbar-brand {
+  color: #801f1f !important;
+  font-size: 1.5rem;
+}
+
+/* Dropdown hover behavior */
+@media (min-width: 992px) {
+  .navbar .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0.5rem;
+    animation: fadeIn 0.3s;
+  }
+}
+
+
+/* ABOUT  */
+
+/* Hero Section Styling */
+.about-hero {
+  background: linear-gradient(to right, #8B0000ee, #00A651cc), url('../images/hero-bg.jpg') center/cover no-repeat;
+}
+
+/* Headings & Theme Colors */
+h2.text-primary {
+  color: #7C0A02 !important;
+}
+h3.text-success {
+  color: #00A651 !important;
+}
+h3.text-warning {
+  color: #FF9900 !important;
+}
+
+
+
+

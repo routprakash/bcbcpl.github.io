@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B C Bhuyan Construction Pvt Ltd.</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css"> <!-- Make sure this is loaded after Bootstrap -->
+<style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    h1, h2, h3, h4, h5 {
+      font-weight: 700;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    section {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    .navbar {
+      padding: 0.7rem 1rem;
+    }
+
+    .navbar-nav .nav-link {
+      color: #000;
+      padding: 0.5rem 1rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link:focus {
+      color: #801f1f;
+      outline: none;
+      box-shadow: none;
+    }
+
+    .navbar-nav .dropdown-menu {
+      border-radius: 0.4rem;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      animation: fadeIn 0.2s ease-in-out;
+    }
+
+    .dropdown-item {
+      padding: 0.5rem 1rem;
+      color: #333;
+    }
+
+    .dropdown-item:hover {
+      background-color: #801f1f;
+      color: #fff;
+    }
+
+    /* Hero Section Styles (if applicable to this page) */
+    .hero {
+      height: 75vh;
+      background: url(images/hero.jpg) center center/cover no-repeat;
+      position: relative;
+    }
+
+    .hero-overlay {
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .about-hero {
+      background: linear-gradient(to right, #8B0000ee, #00A651cc), url('../images/hero-bg.jpg') center/cover no-repeat;
+    }
+
+    h2.text-primary {
+      color: #7C0A02 !important;
+    }
+
+    h3.text-success {
+      color: #00A651 !important;
+    }
+
+    h3.text-warning {
+      color: #FF9900 !important;
+    }
+
+    /* Optional: Animation Keyframe */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  fetch("header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("header-placeholder").innerHTML = data;
+
+      // Ensure dropdown toggles work after header loads
+      const dropdownTriggers = document.querySelectorAll('.dropdown-toggle');
+      dropdownTriggers.forEach(triggerEl => {
+        new bootstrap.Dropdown(triggerEl);
+      });
+
+      // Optional: Hover effect on desktop
+      if (window.innerWidth >= 992) {
+        document.querySelectorAll('.nav-item.dropdown').forEach(dropdown => {
+          dropdown.addEventListener('mouseover', () => {
+            const toggle = dropdown.querySelector('.dropdown-toggle');
+            const instance = bootstrap.Dropdown.getOrCreateInstance(toggle);
+            instance.show();
+          });
+          dropdown.addEventListener('mouseleave', () => {
+            const toggle = dropdown.querySelector('.dropdown-toggle');
+            const instance = bootstrap.Dropdown.getOrCreateInstance(toggle);
+            instance.hide();
+          });
+        });
+      }
+    });
+</script>
+
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay d-flex align-items-center justify-content-center text-white text-center">
+      <div>
+        <h1 class="display-4 fw-bold">Nation Builders</h1>
+        <p class="lead">Transforming the infrastructure landscape of India</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="images/about.jpg" class="img-fluid rounded" alt="About Us">
+      </div>
+      <div class="col-md-6">
+        <h2>About Us</h2>
+        <p>B C Bhuyan Construction Pvt Ltd. is a prominent name in the Indian construction industry, engaged in infrastructure, buildings, water, electrical, and irrigation sectors. With years of excellence and a commitment to quality, we contribute to India’s development as proud nation builders.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Core Segments</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="images/infra.jpg" class="card-img-top" alt="Infrastructure">
+            <div class="card-body">
+              <h5 class="card-title">Infrastructure</h5>
+              <p class="card-text">Roads, Highways, and Bridges that connect the nation.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="images/project1.jpg" class="card-img-top" alt="Buildings">
+            <div class="card-body">
+              <h5 class="card-title">Buildings</h5>
+              <p class="card-text">Modern commercial and residential spaces built with precision.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="images/water.jpg" class="card-img-top" alt="Water Projects">
+            <div class="card-body">
+              <h5 class="card-title">Water & Irrigation</h5>
+              <p class="card-text">Projects that ensure efficient water supply and management.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics Section -->
+  <section class="stats text-white py-5" style="background: #801f1f;">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-3">
+          <h3>40+</h3>
+          <p>Years of Experience</p>
+        </div>
+        <div class="col-md-3">
+          <h3>500+</h3>
+          <p>Projects Completed</p>
+        </div>
+        <div class="col-md-3">
+          <h3>20,000+</h3>
+          <p>Employees</p>
+        </div>
+        <div class="col-md-3">
+          <h3>Pan-India</h3>
+          <p>Operations</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-light text-center">
+    <div class="container">
+      <h2 class="mb-4">Our Expertise</h2>
+      <p class="lead">We specialize in delivering excellence across infrastructure, buildings, water, and electrical sectors, ensuring innovative and sustainable solutions.</p>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Key Projects</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm">
+            <img src="images/project1.jpg" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Metro Rail Construction</h5>
+              <p class="card-text">Urban transport infrastructure developed with precision engineering and sustainability in mind.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm">
+            <img src="images/project2.jpg" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">Water Treatment Plant</h5>
+              <p class="card-text">State-of-the-art facilities to support clean and safe water distribution in urban and rural areas.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm">
+            <img src="images/project3.jpg" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">Smart City Roads</h5>
+              <p class="card-text">High-quality roads with smart infrastructure enabling better urban connectivity and safety.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Strength</h2>
+      <div class="row text-center">
+        <div class="col-md-3">
+          <i class="bi bi-people-fill display-5 text-primary"></i>
+          <h5 class="mt-3">Skilled Workforce</h5>
+          <p>Thousands of trained professionals and engineers across multiple sectors.</p>
+        </div>
+        <div class="col-md-3">
+          <i class="bi bi-award-fill display-5 text-success"></i>
+          <h5 class="mt-3">Quality Assurance</h5>
+          <p>International standards of quality across all stages of project execution.</p>
+        </div>
+        <div class="col-md-3">
+          <i class="bi bi-bar-chart-fill display-5 text-warning"></i>
+          <h5 class="mt-3">Financial Stability</h5>
+          <p>Strong financials enabling execution of large-scale, long-term projects.</p>
+        </div>
+        <div class="col-md-3">
+          <i class="bi bi-globe2 display-5 text-danger"></i>
+          <h5 class="mt-3">Global Reach</h5>
+          <p>Operations spread across domestic and international locations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Contact Us</h2>
+      <p class="lead">Get in touch with our team for inquiries, collaborations, or project discussions.</p>
+      <a href="contact.html" class="btn btn-primary px-4 mb-4">Reach Out</a>
+  
+      <!-- Google Map Embed -->
+      <div class="ratio ratio-16x9">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3741.9149142794154!2d85.8656658!3d20.3037887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a190a161aaaaaab%3A0x8708de4f4172abac!2sB.C.%20Bhuyan%20Constructions%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1744082527425!5m2!1sen!2sin" 
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Footer placeholder -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+  
+</body>
+</html>
