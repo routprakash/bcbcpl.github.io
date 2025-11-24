@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildPro Constructions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .top-header {
+            background-color: #f8f9fa;
+            padding: 5px 0;
+            font-size: 0.9rem;
+        }
+
+        .top-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-header .social-icons a {
+            margin-left: 10px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .top-header .social-icons a:hover {
+            color: #007bff;
+        }
+
+        .main-header {
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .navbar-nav .nav-link {
+            font-weight: 500;
+            color: #333;
+        }
+
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            color: #007bff;
+        }
+
+        .hero {
+            background: url('https://source.unsplash.com/1600x600/?construction,building') no-repeat center center/cover;
+            color: white;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+        }
+
+        .intro-section {
+            background-color: #f0f0f0;
+            padding: 60px 0;
+        }
+
+        .intro-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .footer {
+            background-color: #1f1f1f;
+            color: #ccc;
+            padding: 60px 0 30px;
+        }
+
+        .footer a {
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .footer .footer-title {
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #444;
+            margin-top: 30px;
+            padding-top: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Header -->
+    <div class="top-header">
+        <div class="container">
+            <div>
+                <strong>Email:</strong> info@buildpro.com | <strong>Call:</strong> +91-9876543210
+            </div>
+            <div class="social-icons">
+                <a href="#"><img src="https://img.icons8.com/ios-filled/16/000000/facebook-new.png" alt="Facebook"></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/16/000000/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/16/000000/linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header / Navigation -->
+    <header class="main-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">BuildPro</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Transforming Infrastructure, Empowering Progress</h1>
+            <p class="lead mt-3">Delivering sustainable construction solutions for tomorrow's India</p>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro-section">
+        <div class="container">
+            <h2 class="text-center mb-4">Welcome to BuildPro Constructions</h2>
+            <p class="text-center">BuildPro is one of the leading construction companies in India, committed to delivering excellence through cutting-edge infrastructure projects. We specialize in civil, structural, road, and industrial construction with a legacy of quality and innovation. Discover more about our services, explore ongoing and completed projects, and partner with us for your next construction milestone.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="footer-title">About BuildPro</h5>
+                    <p>BuildPro Constructions is dedicated to delivering high-quality infrastructure with a commitment to excellence, safety, and innovation across India.</p>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <p>BuildPro Corporate Office<br>123 Builder Street, Mumbai, MH 400001<br>Email: info@buildpro.com<br>Phone: +91-9876543210</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5 class="footer-title">Follow Us</h5>
+                    <p>
+                        <a href="#">Facebook</a><br>
+                        <a href="#">Twitter</a><br>
+                        <a href="#">LinkedIn</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p class="mb-1">&copy; 2025 BuildPro Constructions. All rights reserved.</p>
+                <p class="mb-0">
+                    <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
